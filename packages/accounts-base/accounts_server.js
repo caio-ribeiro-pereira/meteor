@@ -567,7 +567,7 @@ var closeTokensForUser = function (userTokens) {
   }, delaySecs * 1000);
 };
 
-Meteor.users.find().observe({
+Meteor.users.find({}, {"services.resume": 1}).observe({
   changed: function (newUser, oldUser) {
     var removedTokens = [];
     if (newUser.services && newUser.services.resume &&
