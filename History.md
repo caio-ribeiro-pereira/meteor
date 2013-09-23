@@ -12,7 +12,7 @@
   converted by passing it through `new Date()`. #1228
 
 * Login token deletion: Expire login tokens periodically. Add
-  Meteor._logoutAllOthers() for logging out other connections logged in as the
+  Meteor.logoutOtherClients() for logging out other connections logged in as the
   current user. Log out and close connections for deleted users and tokens.
 
 * The pre-0.6.5 `Package.register_extension` API has been removed. Use
