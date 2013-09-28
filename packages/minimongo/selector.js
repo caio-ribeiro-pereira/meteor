@@ -769,3 +769,4 @@ LocalCollection._compileSort = function (spec, cursor) {
     return 0;
   };
 };
+
