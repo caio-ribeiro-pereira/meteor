@@ -1,5 +1,7 @@
 ## vNEXT
 
+* `$near` operator for `2d` and `2dsphere` indices.
+
 * Better error when passing a string to {{#each}}. #722
 
 * Write dates to Mongo as ISODate rather than Integer; existing data can be
